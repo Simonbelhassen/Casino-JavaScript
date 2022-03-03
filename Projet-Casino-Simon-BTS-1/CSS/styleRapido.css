@@ -1,0 +1,170 @@
+body
+{
+   background-image: url(../IMAGES/Rapido/rapido.jpg);
+   background-size: cover;
+}
+tr,td,table
+{
+    border: black solid 1px;
+    border-collapse: collapse;
+    
+    width: 350px;
+    height: 70px;
+}
+div
+{
+    display: block;
+}
+#tbl1
+{
+    float: left;
+    margin-top: 5%;
+    margin-left: 4%;
+    background-color: rgb(44, 87, 39);
+}
+#tbl2
+{
+    margin-top: 5%;
+    margin-right: 46%;
+    float: right;
+    background-color: rgb(44, 87, 39);
+}
+#tbl3
+{
+    float: left;
+    margin-top: 2%;
+    margin-left: 4%;
+    background-color: rgb(122, 31, 31);
+}
+#tbl4
+{
+    margin-top: 2%;
+    margin-right: 46%;
+    float: right;
+    background-color: rgb(122, 31, 31);
+}
+#titre
+{
+    text-align: center;
+    font-size: 80px;	
+	text-shadow: 0px 1px 20px, 0px 0px 0px, 1px 1px 15px;
+	letter-spacing: 6px;
+	color: #ffffff;
+	margin: 15px 0px;
+}
+table
+{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.sousTitre
+{
+    text-align: center;
+	font-size: 30px;
+	text-decoration: underline;	
+	color: rgb(255, 255, 255);
+}
+#regle
+{
+    position: absolute;
+    top: 150px;
+    left: 885px;
+    background-color: rgba(31, 23, 23, 0.7);
+    height: 500px;
+    width: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.text
+{
+	margin: 0px 20px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	position: relative;
+}
+label
+{
+	padding:5px;
+    color:rgb(251, 251, 251);
+	text-align: justify;
+	font-size: 20px;
+	position: relative;
+    margin-left: 11%;
+}
+#mise,#cagnotte
+{
+    width: 80px;
+	height: 20px;
+	margin-top: 15px;
+	text-align: center;
+	background-color: rgba(126, 117, 117, 0.7);
+	border: none;
+	color: white;
+	font-size: 20px;
+}
+#cagnotte
+{
+	background-color: rgba(255, 255, 255, 0);
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button 
+{ 
+    appearance: none;
+}
+#btnLancer:hover,#btnRecommencer:hover
+{
+    background-color: rgb(66, 66, 66);
+}
+#btnLancer,#btnRecommencer
+{
+    margin-left: 20px;
+    font-size: 20px;   
+    line-height: 1.5;
+    padding: 0 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+    outline: none;
+    position: absolute;
+    top: 450px;
+    left: 230px;
+}
+#tbl1 td:hover, #tbl3 td:hover
+{
+    background-color: rgb(17, 17, 78);
+    color: white;
+}
+.blue,.blue2
+{
+    background-color: blue;
+    color: white;
+}
+.red
+{
+    background-color: red;
+    color: white;
+}
+.joueur
+{
+	font-size: 30px;
+	text-decoration: underline;	
+	color: rgb(0, 0, 0);
+    position: absolute;
+    top: 17%;
+    left: 13%;
+}
+.ordi
+{
+	font-size: 30px;
+	text-decoration: underline;	
+	color: rgb(0, 0, 0);
+    position: absolute;
+    top: 17%;
+    left: 37.5%;
+}

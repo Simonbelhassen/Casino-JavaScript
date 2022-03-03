@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../CSS/styleMemory.css" rel="stylesheet">
+<script type="text/javascript" src="../JS/JQuery 3.5.1.js"></script>
+<script type="text/javascript" src="../JS/MemoryFonctions.js"></script>
+<title>Memory</title>
+</head>
+<body >   
+<h1 id="titre">JEU MEMORY</h1>
+<script>
+        document.write ("<table id='tableau'>"); 
+            for ( var i = 0; i <3; i++)
+            {
+                    document.write ("<tr>");
+                    for (var j= 1 ; j<=4;   j++)
+                    {  
+                            document.write ("<td>" + "<img src='../IMAGES/Memory/Carte-Verso/dos-carte2.jpg'>" + "</td>" ); 
+                    }
+                    document.write ("</tr>"); 
+            } 
+            document.write ("</table><br><br>");       
+        document.write ("<table id='tableau2'>"); 
+            for ( var i = 0; i <4; i++)
+            {
+                    document.write ("<tr>");
+                    for (var j= 1 ; j<=4;   j++)
+                    {  
+                            document.write ("<td>" + "<img src='../IMAGES/Memory/Carte-Verso/dos-carte2.jpg'>" + "</td>" ); 
+                    }
+                    document.write ("</tr>"); 
+            } 
+            document.write ("</table><br><br>");        
+document.write ("<table id='tableau3'>"); 
+        for ( var i = 0; i <4; i++)
+        {
+                document.write ("<tr>");
+                for (var j= 1 ; j<=5;   j++)
+                {  
+                        document.write ("<td>" + "<img src='../IMAGES/Memory/Carte-Verso/dos-carte2.jpg'>" + "</td>" ); 
+                }
+                document.write ("</tr>"); 
+        } 
+        document.write ("</table><br><br>"); 
+document.write ("<table id='tableau4'>"); 
+        for ( var i = 0; i <4; i++)
+        {
+                document.write ("<tr>");
+                for (var j= 1 ; j<=4;   j++)
+                {  
+                        document.write ("<td>" + "<img src='../IMAGES/Memory/Carte-Verso/dos-carte2.jpg'>" + "</td>" ); 
+                }
+                document.write ("</tr>"); 
+        } 
+        document.write ("</table><br><br>"); 
+        </script>
+<div id="options">
+        <h1 id="regles">Règles/Options</h1>
+        <p class="text">
+        Le but du jeu est de retrouver toutes les paires de cartes en un nombre d'essai le plus petit, il y a différentes difficultés de niveau, débutant avec 6 paires à trouver, confirmé avec 8 paires et expert avec 10 paires. 
+        </p><p class="text">Vous pouvez aussi affronter un Ami.
+        </p><br>
+        <h2 id="niveau">Choix niveau</h2><br>
+        <div id="total">
+                <label>Débutant : </label>
+                <input type="radio" name="niveau" id="débutant" value="Débutant" class="switch_1">
+                <label>Confirmé : </label>
+                <input type="radio" name="niveau" id="confirmé" value="Confirmé" class="switch_1" >
+                <label> Expert : </label>
+                <input type="radio" name="niveau" id="expert" value="Expert" class="switch_1" >
+        </div><br>
+        <label id="lblOneone"> 1 vs 1 : </label>
+        <input type="radio" name="niveau" id="oneone" value="duel" class="switch_1" >
+        <h2 id="compteur">Compteur d'essais</h2>
+        <label for="essai" id="lblEssai"> Nombres d'essais : </label>
+        <input type="text" disabled id="essai">
+        <label for="joueurA" id="joueurA"> Paire(s) trouvée(s) joueur A : </label>
+        <input type="text" disabled id="nbrEssaiA"><br>
+        <label for="joueurB" id="joueurB"> Paire(s) trouvée(s) joueur B : </label>
+        <input type="text" disabled id="nbrEssaiB">
+        <div id="bouton">
+                <a href="memory.html"><input type="button" value="Recommencer" id="btnRetour"></a>
+        </div>
+</div>       
+</body>
+</html>

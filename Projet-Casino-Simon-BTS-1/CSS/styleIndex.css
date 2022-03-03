@@ -1,0 +1,60 @@
+body
+{
+    background-image: url(../IMAGES/Memory/Background/Index2.jpg);
+    background-size: cover;
+}
+#titre
+{
+    font-size: 50px;
+    text-align: center;
+    margin: 15px 15px 0 15px;
+    color: white;
+    text-decoration: white underline;
+}
+.divJeu
+{
+    width: 600px;
+    height: 280px;
+    border-radius: 20px;
+    display: block;
+    margin: 30px;
+    transform: scale(1);
+    transition: .3s linear;
+    text-align: center;
+    box-shadow: -10px -10px 10px rgb(53, 48, 48);
+    background-color: rgba(145, 36, 36, 0.85);
+}
+.divJeu:hover{
+	transform: scale(1.1);
+}
+#jeuMachineSimon
+{
+    float: left;
+    margin-top: 20px;
+    margin-left: 8%;
+}
+
+#jeuMemory
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 8%;
+}
+#jeuRapido
+{
+    float: left;
+    margin-top: 0px;
+}
+h1
+{
+    color: white;
+    text-decoration: underline;
+}
+p
+{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}

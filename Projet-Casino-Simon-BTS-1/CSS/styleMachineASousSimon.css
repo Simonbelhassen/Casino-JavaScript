@@ -1,0 +1,111 @@
+html, body 
+{
+  color : #00eaff;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-style: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-image: url(../IMAGES/MachineSousSimon/espace.jpg);
+  background-size: cover;
+}
+body 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#titre
+{
+	text-align: center;
+    font-size: 100px;	
+	text-shadow: 0px 1px 0px, 0px 0px 0px, 1px 1px 15px;
+    letter-spacing: 6px;
+}
+
+label
+{
+	font-size: 25px;
+	text-shadow: 0px 1px 20px, 0px 0px 0px, 1px 1px 15px;
+}
+
+#mise
+{
+	margin-left: 82px;
+}
+
+#cagnotte, #mise
+{
+    background-color: rgb(131, 131, 131);
+	border-radius: 3px;
+	text-align: center;
+	font-size: 25px;
+	width: 200px;
+}
+
+.Gauche
+{
+	float: left;
+	margin-left: -40px;
+	margin-right: 40px;
+}
+
+img
+{
+	height:200px ; 
+	width: 200px;
+	margin: 1px;
+}
+
+li
+{
+	height: 230px;
+	width: 300px;
+}
+
+ul
+{
+    list-style: none;
+}
+
+.images
+{
+    display: flex;
+    overflow: hidden;
+    height: 220px;
+}
+
+
+#milieu, #droite, #gauche
+{
+    position: relative;
+	margin-left: -30px;
+	margin-right: -90px;
+}
+
+
+
+input[type="button"]
+{
+    margin-bottom: 300px;
+	text-align: center;
+	font-size: 30px;
+	color: #00eaff;
+	width: 250px;
+	height: 50px;
+    margin-left: 400px;
+    margin-top: 50px;
+	cursor: pointer;
+	border-radius: 100px 100px 100px 100px;
+	background-color: rgb(131, 131, 131);
+    
+}
+
+
+input[type="button"]:hover 
+{
+	background-color: #00eaff;
+	color:rgb(131, 131, 131);
+}
+
+

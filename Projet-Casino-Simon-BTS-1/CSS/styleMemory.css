@@ -1,0 +1,270 @@
+body
+{
+	background-image: url(../IMAGES/Memory/Background/Memory.jpg);
+    background-size: cover;
+	color: #ffffff;	
+}
+#titre
+{
+	text-align: center;
+    font-size: 80px;	
+	text-shadow: 0px 1px 20px, 0px 0px 0px, 1px 1px 15px;
+	letter-spacing: 6px;
+	color: #ffffff;
+	margin: 15px 0px;
+    animation-name: colorTitle;
+    animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+img
+{
+    cursor:pointer;
+    height: 125px;
+	width: 90px;
+	height: 115px;
+	border-radius: 10px;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	position: relative;
+	animation-name:tourner;
+	animation-iteration-count: 1;
+}
+table 
+{
+	margin-left: 10%;
+	border: 5px #d56263 solid;
+	border-radius: 20px;
+	float: left;
+}
+td
+{ 
+	padding: 4px; 
+}
+#options
+{
+	background-color: rgba(31, 23, 23, 0.6);
+	width: 700px;
+	height: 560px;
+	border-radius: 20px;
+	/* float: left; */
+    overflow: hidden;
+	margin-left: 26.5%;
+	position: absolute;
+	top: 135px;
+}
+#bouton
+{
+	text-align: center;
+}
+#regles
+{
+	text-align: center;
+	font-size: 40px;
+	text-decoration: underline;	
+	color: rgb(255, 255, 255);
+}
+.text
+{
+	margin: 0px 20px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	position: relative;
+}
+#total
+{
+	  text-align: center
+}
+/* #débutant, #confirmé, #expert
+{
+	margin-top: 0px;
+	margin-bottom: 0px;	
+} */
+#tableau
+{
+	animation-name:tableau1;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	position: relative;	
+}
+@keyframes tableau1
+{
+	0%{left:-700px}
+	0%{top: 0px}
+	100%{left: 10px} 
+	100%{top: 100px}
+} 
+#tableau4
+{
+	animation-name:tableau4;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	position: relative;	
+}
+@keyframes tableau4
+{
+	0%{left:-700px}
+	0%{top: -200px}
+	100%{left: 10px} 
+	100%{top: -80px}
+} 
+#tableau2
+{
+	animation-name:tableau2;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	position: relative;	
+}
+@keyframes tableau2
+{
+	0%{left:-700px}
+	0%{top: -200px}
+	100%{left: 10px} 
+	100%{top: -5px}
+}
+#tableau3
+{
+	animation-name:tableau3;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	position: relative;	
+}
+@keyframes tableau3
+{
+	0%{left:-700px}
+	0%{top: 0px}
+	100%{left: -40px} 
+	100%{top: -45px}
+} 
+@keyframes tourner
+{
+	from
+	{
+		transform: rotateY(0deg);
+	}
+	to
+	{
+		transform: rotateY(360deg);
+	}
+}
+#niveau,#compteur
+{	
+	margin-left: 0%;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: rgb(255, 255, 255) underline;
+}
+#essai
+{
+	width: 25px;
+	height: 15px;
+	margin-top: 15px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+	color: white;
+	font-size: 20px;
+}
+#lblEssai
+{
+	margin-left: 36%;
+	font-size: 20px;
+}
+#btnRetour
+{
+	width: 150px;
+	height: 30px;
+	margin-top: 25px;
+	font-size: 15px;
+	margin-left: -1%;
+    font-size: 20px;   
+    line-height: 1.5;
+    /* padding: 0 20px; */
+	padding-bottom: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+    outline: none;
+}
+#btnRetour:hover
+{
+    background-color: rgb(66, 66, 66);
+}
+input[type="radio"].switch_1
+{
+	text-align: center;
+	font-size: 30px;
+	appearance: none;
+	width: 2em;
+	height: 1em;
+	background: #000000;
+	background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(174,18,18,1) 70%);
+	border-radius: 3em;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	transition: all .2s ease-in-out;
+	margin-top: -1px;
+	vertical-align: middle;
+}
+input[type="radio"].switch_1:checked
+{
+	background: rgb(50,176,35);
+	background: linear-gradient(270deg, rgba(50,176,35,1) 30%, rgba(8,48,10,1) 100%);
+} 
+input[type="radio"].switch_1:after
+{
+	position: absolute;
+	content: "";
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	background: linear-gradient(to bottom, #444,#222);
+	box-shadow: 0 0 .25em rgb(0, 0, 3);
+	transform: scale(.7);
+	left : 0;
+	transition: all .2s ease-in-out;
+	transform: scale(0.8);
+} 
+input[type="radio"].switch_1:checked:after
+{
+	left: calc(100% - 1em);
+	background:linear-gradient(to bottom, #444,#222);
+}
+label
+{
+	padding:5px;
+    color:rgb(251, 251, 251);
+	text-align: justify;
+	font-size: 20px;
+	position: relative;
+}
+h2
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#lblOneone
+{
+	margin-left: 40%;
+}
+#joueurA,#joueurB
+{
+	margin-left: 29%;
+	font-size: 20px;
+}
+#nbrEssaiA,#nbrEssaiB
+{
+	width: 25px;
+	height: 15px;
+	margin-top: 15px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+	color: white;
+	font-size: 20px;
+}

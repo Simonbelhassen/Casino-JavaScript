@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styleMachineASousSimon.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../JS/JQuery 3.5.1.js"></script>
+    <script src="../JS/libraryRoulette.js"></script>
+    <script src="../JS/MachineASousSimon.js"></script>
+    <title>Machine à sous</title>
+</head>
+<script>
+    $(function()
+        {
+            $('input:button').click(LancerMachine);
+        }
+    );
+</script>
+</head>
+<body>
+    
+<div class="container">
+
+        <p id="titre"><u>MACHINE A SOUS</u></p>
+        
+        <div class="Gauche">  <br><br><br>  
+  
+        <label>Votre mise : </label>     <input id="mise" type="number">     <br><br><br>
+
+        <label>Votre cagnotte : </label> <input id="cagnotte" value="50" type="text" readonly>    <br><br>
+       
+        </div>       
+
+      
+            <div id="roulette" class="images">
+                    <ul id="gauche">
+                        <li><img src="../IMAGES/MachineSousSimon/singe.png" ></li>
+                        <li><img src="../IMAGES/MachineSousSimon/tortue.png"></li>
+                        <li><img src="../IMAGES/MachineSousSimon/poulpe.png"></li>
+                        <li><img src="../IMAGES/MachineSousSimon/pig.png"   ></li>
+                        <li><img src="../IMAGES/MachineSousSimon/lapin.png" ></li>
+                    </ul> 
+                    <ul id="milieu">
+                        <li><img src="../IMAGES/MachineSousSimon/singe.png" ></li>
+                        <li><img src="../IMAGES/MachineSousSimon/tortue.png"></li>
+                        <li><img src="../IMAGES/MachineSousSimon/poulpe.png"></li>
+                        <li><img src="../IMAGES/MachineSousSimon/pig.png"   ></li>
+                        <li><img src="../IMAGES/MachineSousSimon/lapin.png" ></li>
+                    </ul> 
+                    <ul id="droite">
+                        <li><img src="../IMAGES/MachineSousSimon/singe.png" ></li>
+                        <li><img src="../IMAGES/MachineSousSimon/tortue.png"></li>
+                        <li><img src="../IMAGES/MachineSousSimon/poulpe.png"></li>
+                        <li><img src="../IMAGES/MachineSousSimon/pig.png"   ></li>
+                        <li><img src="../IMAGES/MachineSousSimon/lapin.png" ></li>
+                    </ul> 
+             </div>
+
+             <br><br><br>
+         
+<div id="btnLancer">
+<input type="button" value="JOUER">
+</div>
+</div>
+</body>
+</html>
